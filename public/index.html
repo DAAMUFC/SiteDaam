@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaamSiter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="https://wrygexbzyhluozvcwtlb.supabase.co/storage/v1/object/public/Slides/Fotos%20Slides/3" alt="Slide 1"></div>
+                    <div class="slide"><img src="https://wrygexbzyhluozvcwtlb.supabase.co/storage/v1/object/public/Slides/Fotos%20Slides/2.jpeg" alt="Slide 2"></div>
+                    <div class="slide"><img src="https://wrygexbzyhluozvcwtlb.supabase.co/storage/v1/object/public/Slides/Fotos%20Slides/1.jpeg" alt="Slide 3"></div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <!-- Outras seções aqui -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MeuSite. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
